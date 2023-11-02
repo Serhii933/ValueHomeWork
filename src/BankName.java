@@ -8,6 +8,7 @@ public class BankName {
     }
 
     public String getName() {
+
         return name;
     }
 

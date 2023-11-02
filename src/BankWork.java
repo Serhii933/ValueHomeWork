@@ -26,12 +26,19 @@ public class BankWork {
         }
 
         System.out.println("Найвигідніший курс обміну: " + maxValueCourse);
-        System.out.println("Банки з найвигіднішим курсом обміну:");
+        System.out.println("Банк з найвигіднішим курсом обміну:");
+
 
         for (int i = 0; i < bankNames.length; i++) {
             if (bankNames[i].getExchangeRate() == maxValueCourse) {
                 System.out.println(bankNames[i].getName());
             }
+        }
+    }
+    public void displayAllBanks() {
+        System.out.println("Банки та їхні курси обміну:");
+        for (int i = 0; i < bankNames.length; i++) {
+            System.out.println(bankNames[i].getName() + ": " + bankNames[i].getExchangeRate());
         }
     }
 }
